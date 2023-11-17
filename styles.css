@@ -7,32 +7,27 @@ body {
   font-family: "Merriweather", serif;
   background-color: #789cbf;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.4rem;
-  color: white;
-  letter-spacing: 3px;
+.heading {
   text-align: center;
+  letter-spacing: 3px;
+  color: white;
   padding: 20px;
+  margin: 10px auto;
+  font-size: 1.4rem;
 }
 .container {
-  width: 80vw;
-  height: 80vh;
-  margin: auto;
-  border-radius: 20px;
+  width: 60vw;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
   background-color: white;
   box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .ribbon {
   width: 100%;
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -84,4 +79,22 @@ input[type="color"] {
   height: 25px;
   border: none;
   cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #789cbf;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #789cbf;
+}
+#text-input {
+  padding: 15px;
+  border: 1px solid #789cbf;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 50vh;
+}
+#text-input:focus {
+  outline: none;
 }

@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Basic Text Editor</h1>
+    <h1 class="heading">Basic Text Editor</h1>
     <div class="container">
       <div class="ribbon">
         <div class="text-format-options">
@@ -38,9 +38,6 @@
           </button>
           <button class="options-btn">
             <i class="bx bx-strikethrough"></i>
-          </button>
-          <button class="options-btn">
-            <i class="bx bx-"></i>
           </button>
         </div>
         <div class="alignment-options">
@@ -76,21 +73,21 @@
           <button class="options-btn">
             <i class="bx bx-redo"></i>
           </button>
-          <button class="options-btn">
+          <button id="create-link" class="options-btn">
             <i class="bx bx-link"></i>
           </button>
-          <button class="options-btn">
+          <button id="remove-link" class="options-btn">
             <i class="bx bx-unlink"></i>
           </button>
         </div>
         <div class="font-format-options">
           <select id="font-header">
-            <option value="H1">H1</option>
-            <option value="H2">H2</option>
-            <option value="H3">H3</option>
-            <option value="H4">H4</option>
-            <option value="H5">H5</option>
-            <option value="H6">H6</option>
+            <option value="h1">H1</option>
+            <option value="h2">H2</option>
+            <option value="h3">H3</option>
+            <option value="h4">H4</option>
+            <option value="h5">H5</option>
+            <option value="h6">H6</option>
           </select>
           <select id="font-family"></select>
           <select id="font-size"></select>
