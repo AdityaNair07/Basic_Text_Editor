@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather", serif;
+  background-color: #789cbf;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.4rem;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.ribbon {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+div[class$="-options"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+.options-btn {
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.bx {
+  margin: auto;
+  font-size: 1rem;
+}
+.input-formatter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+div[class$="color"] {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+select {
+  padding: 5px;
+  border: 1px solid #789cbf;
+  border-radius: 3px;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 40px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
