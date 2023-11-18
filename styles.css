@@ -7,6 +7,36 @@ body {
   font-family: "Merriweather", serif;
   background-color: #789cbf;
 }
+a {
+  text-decoration: none;
+  color: #789cbf;
+  cursor: pointer;
+}
+select {
+  padding: 5px;
+  border: 1px solid #789cbf;
+  border-radius: 3px;
+  width: 100px;
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #789cbf;
+  --sb-size: 7px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+select::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+select::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 7px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 7px;
+}
 .heading {
   text-align: center;
   letter-spacing: 3px;
@@ -16,8 +46,9 @@ body {
   font-size: 1.4rem;
 }
 .container {
-  width: 60vw;
-  margin: 10px auto;
+  max-width: 60vw;
+  min-width: 300px;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   background-color: white;
@@ -27,48 +58,33 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 10px;
 }
-div[class$="-options"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.8rem;
-  padding: 10px;
-}
-.options-btn {
+
+button {
   padding: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: transparent;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .bx {
   margin: auto;
   font-size: 1rem;
 }
-.input-formatter {
+.font-change {
   display: flex;
+  padding: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-}
-div[class$="color"] {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
-select {
-  padding: 5px;
-  border: 1px solid #789cbf;
-  border-radius: 3px;
 }
 input[type="color"] {
   -webkit-appearance: none;
@@ -80,21 +96,33 @@ input[type="color"] {
   border: none;
   cursor: pointer;
 }
+
 input[type="color"]::-webkit-color-swatch {
   border-radius: 15px;
   box-shadow: 0 0 0 2px white, 0 0 0 3px #789cbf;
 }
+
 input[type="color"]::-moz-color-swatch {
   border-radius: 15px;
   box-shadow: 0 0 0 2px white, 0 0 0 3px #789cbf;
 }
+
 #text-input {
   padding: 15px;
   border: 1px solid #789cbf;
   border-radius: 10px;
-  margin-top: 10px;
-  height: 50vh;
+  margin-top: 20px;
+  min-height: 50vh;
 }
+
 #text-input:focus {
   outline: none;
+}
+ul,
+ol {
+  margin: 5px;
+  padding: 5px;
+}
+.active {
+  background-color: #aad4ff;
 }
