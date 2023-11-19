@@ -1,17 +1,22 @@
+/* reset page */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* body selector */
 body {
   font-family: "Merriweather", serif;
   background-color: #789cbf;
 }
+/* anchor selector */
 a {
   text-decoration: none;
   color: #789cbf;
   cursor: pointer;
 }
+
+/* select tag selector  */
 select {
   padding: 5px;
   border: 1px solid #789cbf;
@@ -24,19 +29,24 @@ select {
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
+/* selecting scrollbar  */
 select::-webkit-scrollbar {
   width: var(--sb-size);
 }
 
+/* selecting scrollbar track*/
 select::-webkit-scrollbar-track {
   background: var(--sb-track-color);
   border-radius: 7px;
 }
 
+/* selecting scrollbar thumb*/
 select::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 7px;
 }
+
+/* heading class selector*/
 .heading {
   text-align: center;
   letter-spacing: 3px;
@@ -45,6 +55,8 @@ select::-webkit-scrollbar-thumb {
   margin: 10px auto;
   font-size: 1.4rem;
 }
+
+/* container class selector*/
 .container {
   max-width: 60vw;
   min-width: 300px;
@@ -54,6 +66,8 @@ select::-webkit-scrollbar-thumb {
   background-color: white;
   box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* ribbon class selector */
 .ribbon {
   width: 100%;
   display: flex;
@@ -62,6 +76,7 @@ select::-webkit-scrollbar-thumb {
   gap: 10px;
 }
 
+/* button selector */
 button {
   padding: 5px;
   justify-content: center;
@@ -72,13 +87,19 @@ button {
   border-radius: 3px;
   cursor: pointer;
 }
+
+/* button hover style */
 button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* box icon style  */
 .bx {
   margin: auto;
   font-size: 1rem;
 }
+
+/* font-change class selector  */
 .font-change {
   display: flex;
   padding: 5px;
@@ -86,6 +107,8 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
+/* selecting input type color */
 input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -107,6 +130,7 @@ input[type="color"]::-moz-color-swatch {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #789cbf;
 }
 
+/* selecting text input id element */
 #text-input {
   padding: 15px;
   border: 1px solid #789cbf;
@@ -118,11 +142,15 @@ input[type="color"]::-moz-color-swatch {
 #text-input:focus {
   outline: none;
 }
+
+/* list style  */
 ul,
 ol {
   margin: 5px;
   padding: 5px;
 }
+
+/* defined active class */
 .active {
   background-color: #aad4ff;
 }
