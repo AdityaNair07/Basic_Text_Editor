@@ -16,6 +16,13 @@ a {
   cursor: pointer;
 }
 
+/* list style  */
+ul,
+ol {
+  margin: 5px;
+  padding: 5px;
+}
+
 /* select tag selector  */
 select {
   padding: 5px;
@@ -141,13 +148,6 @@ input[type="color"]::-moz-color-swatch {
 
 #text-input:focus {
   outline: none;
-}
-
-/* list style  */
-ul,
-ol {
-  margin: 5px;
-  padding: 5px;
 }
 
 /* defined active class */
